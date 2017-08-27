@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rnky39.demoys.reguser">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <EditText
+            android:id="@+id/r_userName"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r_userName"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="61dp" />
+
+        <Spinner
+            android:id="@+id/lifestyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:entries="@array/lifestyles"
+           />
+
+        <EditText
+            android:id="@+id/cweight"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lifestyle"
+            android:ems="10"
+            android:hint="Current Weight"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="169dp" />
+
+        <EditText
+            android:id="@+id/gweight"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cweight"
+            android:ems="10"
+            android:hint="Goal Weight"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="169dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gweight"
+            android:onClick="reguser1"
+            android:text="@string/register"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="292dp" />
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

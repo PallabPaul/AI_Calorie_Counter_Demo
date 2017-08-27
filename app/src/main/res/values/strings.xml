@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AI Calorie Counter</string>
+    <string name="action_settings">Settings</string>
+    <string name="contact">Contact</string>
+    <string name="country">Country</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+
+    <string-array name="lifestyles">
+        <item>Relaxed</item>
+        <item>Active</item>
+        <item>Very Active</item>
+    </string-array>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="button_calories">Check Calories</string>
+
+</resources>
